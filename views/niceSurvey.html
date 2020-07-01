@@ -1,0 +1,144 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tesla Website Survey</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+</head>
+
+<body>
+
+  <div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <div  id="title">
+    <h1> Tesla Website Survey </h1>
+    </div>
+
+    <div  id ="link">
+      <h4> This survey will be evaluating <a href="https://www.tesla.com/" target="_blank">Tesla's website </a> User Interface Design</h4>
+    </div>
+
+    <div id = "imageLink">
+      <a href="https://www.tesla.com/" target="_blank">
+        <img  src="https://i.imgur.com/ZGOFjIV.jpg" height="300">
+      </a>
+    </div>
+
+    <div>
+      <form>
+
+        <div class = "subsection">
+
+          <h4> Do you find the website easy to navigate and why? </h4>
+          <!-- <textarea id="textResponse" name="navigate" rows="7" cols="50">
+          </textarea> -->
+
+          <input type="text" name="navigate"  required />
+          
+        </div>
+
+        <div class = "subsection">
+
+          <h4>Please select the best aspect of the website's design:</h4>
+
+          <input type="radio" id="animation" name="design" value="Amimation">
+          <label for="animation">Animation</label><br>
+
+          <input type="radio" id="colorScheme" name="design" value="ColorScheme">
+          <label for="colorScheme">Color Scheme</label><br>
+
+          <input type="radio" id="pageNavigation" name="design" value="PageNavigation">
+          <label for="pageNavigation">Page Navigation</label><br>
+
+          <input type="radio" id="other" name="design" value="Other">
+          <label for="other">Other</label>
+        </div>
+
+
+        <div class = "subsection">
+          <label for="organization"><h4>What is your opinion on how information is organized? </h4></label>
+          <div>
+            <select name="organization" id="organization">
+              <option value="veryClear">Very Clear</option>
+              <option value="littleClear">A Little Clear</option>
+              <option value="littleConfusing">A Little Confusing</option>
+              <option value="veryConfusing">Very Confusing</option>
+            </select>
+          </div>
+        </div>
+
+        <div class = "subsection">
+
+          <h4>What aspects of the website can be improved?</h4>
+
+          <input type="checkbox" id="responsiveness" name="improved" value="Responsiveness">
+          <label for="responsiveness">Responsiveness</label><br>
+
+          <input type="checkbox" id="Responsiveness" name="improved" value="InformationProvided">
+          <label for="informationProvided">Information Provided</label><br>
+
+          <input type="checkbox" id="organizationChoice" name="improved" value="Organization">
+          <label for="organizationChoice">Organization </label> <br>
+
+          <input type="checkbox" id="otherCheck" name="improved" value="Other">
+          <label for="otherCheck">Other</label>
+          
+        </div>
+
+        <div class = "subsection" id="likert">
+
+          <h4>How likely are you to return to this website in the future?</h4>
+
+
+          <ul class="likert">
+
+          <li> Not Likely </li>
+          <li><input type="radio" name="likely" value="1" /></li>
+          <li><input type="radio" name="likely" value="2" /></li>
+          <li><input type="radio" name="likely" value="3" /></li>
+          <li><input type="radio" name="likely" value="4" /></li>
+          <li><input type="radio" name="likely" value="5" /></li>
+          <li> Very Likely </li>
+
+        </ul><br>
+
+        </div>
+
+        <div class = "subsection">
+
+          <h4> Any additional comments about the website? </h4>
+          <!-- <textarea id="comments" name="comments" rows="4" cols="50">
+          </textarea> -->
+          <input type="text" name="comments"  required />
+
+          
+        </div>
+
+        <div id="submit">
+          <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+          <!-- <input type="submit" value="Submit"> -->
+        </div>
+
+      </form>
+
+    </div>
+
+    <footer id = "footer">
+      <p>Website designed by Kartik Singhal</p>
+    </footer>
+
+  </div>
+  <script src="/assets/action.js"></script>
+</body>
+</html>
